@@ -7,9 +7,33 @@ const generatePassword = (length, options) => {
     const numbers = "0123456789";
     const specialChars = "!@#$%^&*()";
 
+    
     // TODO: Create a variable for the character set based on selected options
-
+    let characterSet = "";
+    const optionsMapping = [
+        { condition: options.includeUppercase, chars: uppercase },
+        { condition: options.includeLowercase, chars: lowercase },
+        { condition: options.includeNumbers, chars: numbers },
+        { condition: options.includeSpecialChars, chars: specialChars }
+        
+    ];
+    
     // TODO: Generate the password based on the selected criteria
+    optionsMapping.forEach(option => {
+        if (option.condition) characterSet += option.chars;
+    });
+
+    if (characterSet.length===0){
+        alert("harus pilih gblok")
+        return;
+    }
+    
+    let password = "";
+    for (let i = 0; i < length; i++) {
+        const randomIndex = Math.floor(Math.random() * characterSet.length);
+        password += characterSet[randomIndex];
+    }
+
     return password;
 };
 

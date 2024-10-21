@@ -4,17 +4,29 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #e0e7ff; /* Background color */
+    background-color: #f2d5d5; /* Background color */
 }
 
 .container {
     text-align: center;
     padding: 30px;
-    background-color: #ffffff; /* Background color for container */
+    background-color: #fdfcfc; /* Background color for container */
     border-radius: 15px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     width: 90%;
     max-width: 400px;
+}
+
+#passwordOutput {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid #0f0909;
+    border-radius: 4px;
+    font-size: 18px;
+    font-family: monospace;
+    text-align: center;
+    background-color: #fdfafa;
 }
 
 /* TODO: Add styles for labels, inputs, buttons, and output text */
