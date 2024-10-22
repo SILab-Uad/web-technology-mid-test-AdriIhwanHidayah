@@ -36,6 +36,22 @@ export const generatePassword = (length, options) => {
     return password;
 };
 
+
+// NGGA USAH DI TAMBAHIN DOM.
+
+// document.getElementById('copyBtn').addEventListener('click', () => {
+//     const passwordOutput = document.getElementById('passwordOutput').textContent; // Menggunakan textContent
+//     if (passwordOutput) {
+//         navigator.clipboard.writeText(passwordOutput).then(() => {
+//             alert('Password copied to clipboard!');
+//         }).catch(err => {
+//             console.error('Could not copy text: ', err);
+//         });
+//     } else {
+//         alert('No password to copy!');
+//     }
+// });
+
 // TODO: Add event listener to the button to call generatePassword and display the output
 
 // BONUS: Implement the copy to clipboard functionality
